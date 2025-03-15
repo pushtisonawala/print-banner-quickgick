@@ -52,7 +52,7 @@ export default function BoxesPackagingPage() {
   return (
     <CategoryPage
       title="Boxes & Packaging"
-      description="Elevate your product presentation with our custom boxes and packaging solutions. From shipping boxes to gift packaging, we've got you covered."
+      description="Custom boxes and packaging solutions."
       products={products}
       category="boxes-packaging"
     />

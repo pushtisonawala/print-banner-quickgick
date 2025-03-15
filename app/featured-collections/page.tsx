@@ -54,6 +54,7 @@ export default function FeaturedCollectionsPage() {
       title="Featured Collections"
       description="Explore our curated collections of print products. From eco-friendly options to luxury prints, find the perfect set for your needs."
       products={products}
+      category="featured"  // Add this line
     />
   )
 }

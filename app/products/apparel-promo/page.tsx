@@ -51,8 +51,8 @@ const products = [
 export default function ApparelPromoPage() {
   return (
     <CategoryPage
-      title="Apparel & Promo"
-      description="Showcase your brand with custom apparel and promotional items. From t-shirts to business gifts, we offer a wide range of customizable products."
+      title="Apparel & Promotional Items"
+      description="Custom apparel and promotional items for your brand."
       products={products}
       category="apparel-promo"
     />
