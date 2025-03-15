@@ -118,32 +118,36 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                name: "Luxury Business Cards",
+                id: 201,
+                name: "Premium Metal Business Cards",
                 image: "https://i.etsystatic.com/35065106/r/il/788e1c/4854300468/il_570xN.4854300468_xgz2.jpg",
-                price: "From $34.99",
-                href: "/products/business-cards/luxury",
+                price: "From $89.99",
+                slug: "metal-cards"
               },
               {
-                name: "Roll-Up Banners",
+                id: 202,
+                name: "Custom Vehicle Wraps",
                 image: "https://hazken.com/assets/images/bg/Rollup-banner-small-base.jpg",
-                price: "From $79.99",
-                href: "/products/banners/roll-up",
+                price: "From $499.99",
+                slug: "vehicle-wraps"
               },
               {
-                name: "Brochures",
+                id: 203,
+                name: "Large Format Banners",
                 image: "https://dldzmxx3p7w78.cloudfront.net/hotcardsv10/images/opt/products_gallery_images/Custom-Printed-Campaign-Tri-Fold-Brochures-1_08164914202409.jpg.webp?v=5854",
-                price: "From $39.99",
-                href: "/products/brochures",
+                price: "From $129.99",
+                slug: "large-banners"
               },
               {
-                name: "Labels",
+                id: 204,
+                name: "Illuminated Signs",
                 image: "https://res.cloudinary.com/dxivtqnri/image/upload/c_fill,f_auto,g_auto,h_480,w_720/v1704436060/2024/Labels/Product-page/Packaging-labels.jpg",
-                price: "From $14.99",
-                href: "/products/labels",
+                price: "From $299.99",
+                slug: "illuminated-signs"
               },
             ].map((product) => (
-              <Card key={product.name} className="group overflow-hidden">
-                <Link href={product.href}>
+              <Card key={product.id} className="group overflow-hidden">
+                <Link href={`/products/featured/${product.slug}`}>
                   <div className="aspect-square relative overflow-hidden">
                     <Image
                       src={product.image || "/placeholder.svg"}
@@ -248,32 +252,36 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
+                id: 101,
                 name: "Eco-Friendly Cards",
                 image: "https://i.etsystatic.com/21873794/r/il/ccb163/3669153358/il_570xN.3669153358_mb84.jpg",
                 price: "From $29.99",
-                href: "/products/business-cards/eco",
+                slug: "eco-friendly-cards"
               },
               {
-                name: "Metal Business Cards",
-                image: "https://creativeprints.ae/wp-content/uploads/2024/05/Metal-Business-Cards-6.png",
-                price: "From $89.99",
-                href: "/products/business-cards/metal",
-              },
-              {
+                id: 102,
                 name: "Window Decals",
                 image: "https://cdn.squaresigns.com/images/products/slider/restaurant-clear-window-decal.jpg",
                 price: "From $19.99",
-                href: "/products/decals/window",
+                slug: "window-decals"
               },
               {
+                id: 103,
                 name: "Floor Graphics",
                 image: "https://pacificsigns.net/wp-content/uploads/2022/12/floor-graphics-prod.jpg",
                 price: "From $24.99",
-                href: "/products/graphics/floor",
+                slug: "floor-graphics"
+              },
+              {
+                id: 104,
+                name: "3D Store Signs",
+                image: "https://xindadisplay.com/wp-content/uploads/2019/09/3d-rendering-computer-retail-store-interior-design-059-5.jpg",
+                price: "From $399.99",
+                slug: "3d-signs"
               },
             ].map((product) => (
-              <Card key={product.name} className="group overflow-hidden">
-                <Link href={product.href}>
+              <Card key={product.id} className="group overflow-hidden">
+                <Link href={`/products/new/${product.slug}`}>
                   <div className="aspect-square relative overflow-hidden">
                     <Image
                       src={product.image || "/placeholder.svg"}
